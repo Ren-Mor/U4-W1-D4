@@ -17,7 +17,8 @@ public class Main {
 
         int totStipendi = 0;
 
-        for (Dipendente schiavo : dipendenti){
+        for (int i = 0; i < dipendenti.length; i++){
+            Dipendente schiavo = dipendenti[i];
             int paga = schiavo.calcoloStipendio();
             totStipendi += paga;
             System.out.println("Matricola: " + schiavo.getMatricola() + " - Stipendio: " + paga);
