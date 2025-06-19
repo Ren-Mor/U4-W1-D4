@@ -8,6 +8,10 @@ public class Main {
         Dipendente Gianni = new DipendenteFullTime("02 Full Time", Dipartimento.Produzione, 2000);
         Dipendente Sara = new DipendentePartTime("03 Tirocinante", Dipartimento.Vendite, 8, 70);
 
+        // Creo due volontari
+        Volontario Francesca = new Volontario("Francesca", 19, "Esperienza babysitter");
+        Volontario Michele = new Volontario("Michele", 21, "Esperienza militare");
+
         // Inserisco i dipendenti in un array
         Dipendente[] dipendenti = {Alessia, Gianni, Sara};
 
@@ -20,6 +24,11 @@ public class Main {
         }
 
         System.out.println("Totale stipendi: " + totStipendi);
+
+        CheckIn.Checked[] persone = {(CheckIn.Checked) Alessia, (CheckIn.Checked) Gianni, (CheckIn.Checked) Sara, (CheckIn.Checked) Francesca, (CheckIn.Checked) Michele};
+        for (CheckIn.Checked persona: persone){
+            persona.checkin();
+        }
 
         }
     }

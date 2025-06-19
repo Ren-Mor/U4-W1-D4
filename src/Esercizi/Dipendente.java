@@ -33,4 +33,10 @@ public abstract class Dipendente {
 
     // Metodo abstract da implementare per ogni "miniclasse"
     public abstract int calcoloStipendio();
+
+    // Implementazione metodo CheckIn
+    @Override
+    public void checkin(){
+        System.out.println("Dipendente matricola: " + matricola + "inizia turno");
+    }
 }

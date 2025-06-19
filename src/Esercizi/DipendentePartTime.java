@@ -1,6 +1,6 @@
 package Esercizi;
 
-public class DipendentePartTime extends Dipendente {
+public class DipendentePartTime extends Dipendente implements CheckIn{
     private int pagaOre;
     private int oreLavoro;
 
