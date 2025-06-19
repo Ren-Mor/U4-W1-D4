@@ -1,6 +1,6 @@
 package Esercizi;
 
-public abstract class Dipendente {
+public abstract class Dipendente implements CheckIn {
 
     // Dichiaro attributi del Dipendente
     private final String matricola;

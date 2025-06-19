@@ -25,10 +25,11 @@ public class Main {
 
         System.out.println("Totale stipendi: " + totStipendi);
 
-        CheckIn.Checked[] persone = {(CheckIn.Checked) Alessia, (CheckIn.Checked) Gianni, (CheckIn.Checked) Sara, (CheckIn.Checked) Francesca, (CheckIn.Checked) Michele};
-        for (CheckIn.Checked persona: persone){
+        CheckIn[] persone = {Alessia,  Gianni,  Sara,  Francesca,  Michele};
+        for(CheckIn persona : persone) {
             persona.checkin();
+        }
         }
 
         }
-    }
+    
